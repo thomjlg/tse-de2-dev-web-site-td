@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<title>Site Cours Techno WEB</title>
+<meta name="description" content="Site Cours Techno WEB">
+<link rel="shortcut icon" type="image/jpg" href="logoTSE.png"/>
+<link rel="stylesheet" href="style.css" />
+<script src="scripts.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+
+<body>
+<div class=onload>
+    <div class=cube1>
+        <div class="cubeFace arriere"></div>
+        <div class="cubeFace gauche"></div>
+        <div class="cubeFace droite"></div>
+        <div class="cubeFace devant"></div>
+        <div class="cubeFace haut"></div>
+        <div class="cubeFace bas"></div>
+    </div>
+</div>
+
+<div class=contentWS>
+    <header>
+        <div class=headerflex>
+            <div class=header>Module Technologies WEB
+            </div>
+            <div class=menu onclick="toggle_visibility('listMenu');">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div class=listMenu id=listMenu>
+            <ul>
+                <li onclick="goMenu('accueil', 'seance1', 'seance2', 'listMenu');"><b>Page<br />d'accueil</b</li>
+                <li onclick="goS1('accueil', 'seance1', 'seance2', 'listMenu');"><b>Séance 1</b><br /><i>17/09/2020</i></li>
+                <li onclick="goS2('accueil', 'seance1', 'seance2', 'listMenu');"><b>Séance 2</b><br /><i>24/09/2020</i></li>
+            </ul>
+        </div>
+    </header>
+
+    <div id=accueil>
+        <div style="margin-top:15%;text-align:center;"><h2>TITRE</h2></div>
+        
+        
+        
+        
+    </div>
+
+    <div id=seance1>
+        <div style="margin-top:15%;text-align:center;"><h1>Séance 1</H1></div>
+        <div class=videoPlay><h1>Vidéo</h1><br />
+            <video controls  style="width:50%;">
+              <source src="mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <div id=seance2>
+        <div style="margin-top:15%;text-align:center;"><h1>Séance 2</H1></div>
+        
+        <div class=circleposition>
+            <div class=circle>
+            </div>
+        </div>
+        
+        <div style="height:60vh">
+            <div class=cube>
+                <div class="cubeFace arriere"></div>
+                <div class="cubeFace gauche"></div>
+                <div class="cubeFace droite"></div>
+                <div class="cubeFace devant"></div>
+                <div class="cubeFace haut"></div>
+                <div class="cubeFace bas"></div>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+
+
+    <div class=footer2>Module Technologies WEB - FiSA DE2 - 2020/2021
+    </div>
+    <footer>© 2020<br />Thomas JAULGEY
+        <div class=credits>Tous droits réservés !<br /><br />
+            <img src='logoTSE.png' width=25%/>
+        </div>
+    </footer>
+</div>
+</body>
+
